@@ -1,1 +1,0 @@
-# qaonix-ai
