@@ -22,7 +22,7 @@ app = Flask(__name__)
 # Model to use for summarizing feedback
 HF_MODEL = os.getenv("HF_MODEL", "google/flan-t5-small")
 HF_URL = "https://router.huggingface.co/hf-inference"  # Hugging Face router endpoint
-HF_TOKEN = os.getenv("HF_TOKEN", "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")  # add your token to .env if available
+HF_TOKEN = os.getenv("HF_TOKEN", "hf_***********************")  # add your token to .env if available
 
 HEADERS = {"Authorization": f"Bearer {HF_TOKEN}"} if HF_TOKEN else {}
 
@@ -96,3 +96,4 @@ def analyze():
 if __name__ == "__main__":
     # Run locally on port 5000, enable debug mode for development
     app.run(host="0.0.0.0", port=5000, debug=True)
+
